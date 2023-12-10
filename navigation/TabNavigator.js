@@ -5,10 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Dropdown } from "react-native-element-dropdown";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { Context } from "../config/Context";
-import EditProfile from "../screens/EditProfile";
 import HomeScreen from "../screens/HomeScreen";
 import HotelsScreen from "../screens/HotelsScreen";
 import ProfileScreen from "../screens/ProfileScreen";
@@ -31,7 +29,6 @@ const data = [
 ];
 
 const HomeStack = () => {
-  const insets = useSafeAreaInsets();
   return (
     <Swipe.Navigator
       initialRouteName="Home"
@@ -85,33 +82,10 @@ const ProfileStack = () => {
         options={{
           title: "Profile",
           headerTitleAlign: "center",
-          // headerRight: () => (
-          //   <MaterialCommunityIcons.Button
-          //     style={{ marginRight: -10 }}
-          //     name="account-edit"
-          //     size={30}
-          //     backgroundColor="#7677B7"
-          //     onPress={() => navigation.navigate("EditProfile")}
-          //   />
-          // ),
+
         }}
       />
-      <Stack.Screen
-        name="EditProfile"
-        component={EditProfile}
-        options={{
-          title: "",
-          headerLeft: () => (
-            <Ionicons.Button
-              style={{ paddingRight: -5 }}
-              name="arrow-back"
-              size={30}
-              backgroundColor="#7677B7"
-              onPress={() => navigation.navigate("ProfileScreen")}
-            />
-          ),
-        }}
-      />
+      
       <Stack.Screen
         name="ReportBugScreen"
         component={ReportBugScreen}
@@ -204,7 +178,6 @@ const TabNavigator = () => {
       <Tab.Screen
         name="Home"
         options={{
-          // tabBarBadge: 3,
           headerTitleAlign: "center",
           headerTitle: () => <HeaderSearch />
           ,

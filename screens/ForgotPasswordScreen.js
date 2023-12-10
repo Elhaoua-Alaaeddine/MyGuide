@@ -1,19 +1,17 @@
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  KeyboardAvoidingView,
-  ActivityIndicator,
-  TextInput,
-} from "react-native";
-import React from "react";
-import { themeColors } from "../theme";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
-import { ArrowLeftIcon } from "react-native-heroicons/solid";
-import { auth } from "../config/firebase";
 import { sendPasswordResetEmail } from "firebase/auth";
+import React from "react";
+import {
+  ActivityIndicator,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { ArrowLeftIcon } from "react-native-heroicons/solid";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { auth } from "../config/firebase";
+import { themeColors } from "../theme";
 
 const ForgotPasswordScreen = () => {
   const navigation = useNavigation();

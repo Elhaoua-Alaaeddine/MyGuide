@@ -1,30 +1,19 @@
 import { updateProfile } from "firebase/auth";
 import React from "react";
 import {
-    ActivityIndicator,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
+  ActivityIndicator,
+  ScrollView,
+  Text,
+  View,
 } from "react-native";
 import PostCard from "../components/PostCard";
 import { Context } from "../config/Context";
 import { auth } from "../config/firebase";
 
-const data = [
-  { label: "Ifrane", value: "1" },
-  { label: "Casablanca", value: "2" },
-  { label: "Rabat", value: "3" },
-  { label: "Tangier", value: "4" },
-  { label: "Fes", value: "5" },
-  { label: "Marrakesh", value: "6" },
-  { label: "Meknes", value: "7" },
-];
 
 const HomeScreen = () => {
   const { name, setName } = React.useContext(Context);
   const { city, setCity } = React.useContext(Context);
-  const [isCatFocus, setIsCatFocus] = React.useState(false);
   const { signedUp, setSignedUp } = React.useContext(Context);
   const { isLoading, setIsLoading } = React.useContext(Context);
   React.useEffect(() => {
@@ -116,46 +105,3 @@ const HomeScreen = () => {
 
 export default HomeScreen;
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "rgb(243 232 255)",
-    padding: 16,
-  },
-  dropdown: {
-    height: 50,
-    borderColor: "gray",
-    borderWidth: 0.5,
-    borderRadius: 8,
-    paddingHorizontal: 8,
-  },
-
-  label: {
-    position: "absolute",
-    backgroundColor: "rgb(243 232 255)",
-    left: 22,
-    top: 8,
-    zIndex: 999,
-    paddingHorizontal: 8,
-    fontSize: 14,
-  },
-  label2: {
-    position: "absolute",
-    backgroundColor: "rgb(243 232 255)",
-    left: 22,
-    top: 8,
-    zIndex: 999,
-    paddingHorizontal: 8,
-    fontSize: 14,
-  },
-  placeholderStyle: {
-    paddingHorizontal: 8,
-    fontSize: 16,
-  },
-  selectedTextStyle: {
-    fontSize: 16,
-  },
-  inputSearchStyle: {
-    height: 40,
-    fontSize: 16,
-  },
-});

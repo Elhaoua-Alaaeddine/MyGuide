@@ -5,7 +5,6 @@ import { Context } from "../config/Context";
 
 const RestaurantsScreen = () => {
   const { city, setCity } = React.useContext(Context);
-  const [isCatFocus, setIsCatFocus] = React.useState(false);
   const { isLoading, setIsLoading } = React.useContext(Context);
 
   return (

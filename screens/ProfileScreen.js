@@ -96,18 +96,7 @@ const ProfileScreen = () => {
           </View>
         </View>
       </View>
-      {/* buttons to upgrade to business owner or authority */}
-      {/* <TouchableOpacity className="flex-row justify-center items-center bg-yellow-500 rounded-lg mx-5 mt-10 p-2">
-            <Title className="text-white text-xl text-gray-700">
-              Upgrade to Business Owner
-            </Title>
-          </TouchableOpacity>
-          <TouchableOpacity className="flex-row justify-center items-center bg-yellow-500 rounded-lg mx-5 mt-4 p-2">
-            <Title className="text-white text-xl text-gray-700">
-              Request Upgrade to Authority
-            </Title>
-          </TouchableOpacity> */}
-      {/* button to logout  */}
+
       <View className="flex-1 self-stretch">
         <TouchableRipple onPress={handleUpgradeToBusiness}>
           <View className="flex-row px-7 py-3 border-y border-gray-400">
@@ -152,9 +141,6 @@ const ProfileScreen = () => {
           </Text>
         </TouchableOpacity>
       </View>
-      {/* <TouchableOpacity className="flex-row justify-center items-center bg-red-400 rounded-lg mx-5 mt-14 p-2" onPress={handleLogout}>
-            <Title className="text-white text-xl text-gray-700 font-bold">Logout</Title>
-          </TouchableOpacity> */}
     </SafeAreaView>
   );
 };

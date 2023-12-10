@@ -1,6 +1,5 @@
-import { View, Text } from 'react-native'
+import { onAuthStateChanged } from 'firebase/auth'
 import React from 'react'
-import { onAuthStateChanged, updateProfile } from 'firebase/auth'
 import { auth } from '../config/firebase'
 
 const useAuth = () => {

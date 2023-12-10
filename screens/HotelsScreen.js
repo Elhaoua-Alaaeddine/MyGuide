@@ -5,7 +5,6 @@ import { Context } from "../config/Context";
 
 const HotelsScreen = () => {
   const { city, setCity } = React.useContext(Context);
-  const [isCatFocus, setIsCatFocus] = React.useState(false);
   const { isLoading, setIsLoading } = React.useContext(Context);
   return (
     <View className="flex-1  bg-purple-100">

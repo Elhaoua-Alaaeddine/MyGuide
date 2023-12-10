@@ -6,19 +6,13 @@ import { TouchableRipple } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const data = [
-  { label: "Item 1", value: "1" },
-  { label: "Item 2", value: "2" },
-  { label: "Item 3", value: "3" },
-  { label: "Item 4", value: "4" },
-  { label: "Item 5", value: "5" },
-  { label: "Item 6", value: "6" },
-  { label: "Item 7", value: "7" },
+  { label: "Bug", value: "1" },
+  { label: "Abuse", value: "2" },
   { label: "Other", value: "Other" },
 ];
 
 const ReportBugScreen = () => {
   const navigation = useNavigation();
-  const [value, setValue] = React.useState(null);
   const [description, setDescription] = React.useState(null);
   const [category, setCategory] = React.useState(null);
   const [isCatFocus, setIsCatFocus] = React.useState(false);
