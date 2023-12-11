@@ -14,10 +14,7 @@
       }
     },
     "preview3": {
-      "developmentClient": false
-    },
-    "preview4": {
-      "distribution": "internal"
+      "developmentClient": true
     },
     "production": {}
   },

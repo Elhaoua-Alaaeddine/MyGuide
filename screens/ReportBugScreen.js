@@ -1,8 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { KeyboardAvoidingView, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+import { KeyboardAvoidingView, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Dropdown } from "react-native-element-dropdown";
-import { TouchableRipple } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const data = [
@@ -85,11 +84,11 @@ const ReportBugScreen = () => {
         />
       </View>
       <View className="items-center ">
-        <TouchableRipple onPress={handleSubmit} className="border-2 px-6 py-2 rounded-md">
+        <TouchableOpacity onPress={handleSubmit} className="border-2 px-6 py-2 rounded-md">
           <Text className="text-xl font-bold">
             Submit
           </Text>
-        </TouchableRipple>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
     </KeyboardAvoidingView>

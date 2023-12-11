@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import { signOut } from "firebase/auth";
 import React from "react";
 import { ImageBackground, Text, TouchableOpacity, View } from "react-native";
-import { Title, TouchableRipple } from "react-native-paper";
+import { Title } from "react-native-paper";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import {
@@ -42,7 +42,7 @@ const ProfileScreen = () => {
     navigation.navigate("UpgradeToBusinessScreen");
   };
   return (
-    <SafeAreaView className="bg-purple-100 flex-1">
+    <SafeAreaView className="bg-purple-100 flex-1 pt-4">
       <View>
         <View className="mx-3 mb-3 items-center justify-center">
           <TouchableOpacity>
@@ -76,9 +76,9 @@ const ProfileScreen = () => {
             <Title className=" text-lg ml-5 -mt-1 text-gray-500">{email}</Title>
           </View>
           <View className="absolute right-0 top-0.5 border-l border-gray-400">
-            <TouchableRipple onPress={() => {}} className=" p-5">
+            <TouchableOpacity onPress={() => {}} className=" p-5">
               <MaterialCommunityIcon name="pencil" size={20} className="" />
-            </TouchableRipple>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -90,15 +90,15 @@ const ProfileScreen = () => {
             </Title>
           </View>
           <View className="absolute right-0 top-0.5 border-l border-gray-400">
-            <TouchableRipple onPress={() => {}} className=" p-5">
+            <TouchableOpacity onPress={() => {}} className=" p-5">
               <MaterialCommunityIcon name="pencil" size={20} className="" />
-            </TouchableRipple>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
 
       <View className="flex-1 self-stretch">
-        <TouchableRipple onPress={handleUpgradeToBusiness}>
+        <TouchableOpacity onPress={handleUpgradeToBusiness}>
           <View className="flex-row px-7 py-3 border-y border-gray-400">
             <View className=" justify-center items-center">
               <MaterialCommunityIcon
@@ -106,33 +106,33 @@ const ProfileScreen = () => {
                 size={25}
               />
             </View>
-            <Title className="px-3 -my-0.5">Upgrade to business owner</Title>
+            <Title className="px-3 -my-0.5 text-black">Upgrade to business owner</Title>
           </View>
-        </TouchableRipple>
-        <TouchableRipple onPress={() => {}}>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => {}}>
           <View className="flex-row px-7 py-3 border-b border-gray-400">
             <View className=" justify-center items-center">
               <MaterialCommunityIcon name="account-check-outline" size={25} />
             </View>
-            <Title className="px-3 -my-0.5">Upgrade to authority</Title>
+            <Title className="px-3 -my-0.5 text-black">Upgrade to authority</Title>
           </View>
-        </TouchableRipple>
-        <TouchableRipple onPress={handleReportBug}>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleReportBug}>
           <View className="flex-row px-7 py-3 border-b border-gray-400">
             <View className=" justify-center items-center">
               <Ionicons name="warning-outline" size={25} />
             </View>
-            <Title className="px-3 -my-0.5">Report a problem</Title>
+            <Title className="px-3 -my-0.5 text-black">Report a problem</Title>
           </View>
-        </TouchableRipple>
-        <TouchableRipple onPress={handleLogout}>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={handleLogout}>
           <View className="flex-row px-7 py-3 border-b border-gray-400">
             <View className=" justify-center items-center">
               <MaterialCommunityIcon name="logout" size={25} />
             </View>
-            <Title className="px-3 -my-0.5">Log out</Title>
+            <Title className="px-3 -my-0.5 text-black">Log out</Title>
           </View>
-        </TouchableRipple>
+        </TouchableOpacity>
       </View>
       <View className="items-center align-center p-5 ">
         <TouchableOpacity>

@@ -127,6 +127,10 @@ const [isCatFocus, setIsCatFocus] = React.useState(false);
 const {city, setCity} = React.useContext(Context);
 const {isLoading, setIsLoading} = React.useContext(Context); 
 
+React.useEffect(() => {
+  console.log("city: ", city);
+}, [city]);
+
 const loadScreen = () => {
   setIsLoading(true);
   setTimeout(() => {
