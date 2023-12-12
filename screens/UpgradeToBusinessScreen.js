@@ -26,7 +26,7 @@ const UpgradeToBusinessScreen = () => {
     <SafeAreaView className="flex-1 justify-center">
       <Modal visible={showModal} onRequestClose={() => setShowModal(false)}>
         <WebView
-          source={{ uri: "10.121.42.158:3000" }}
+          source={{ uri: "paypal server IP" }}
           onNavigationStateChange={(data) => handleresponse(data)}
           injectedJavaScript={`document.f1.submit()`}
         />
