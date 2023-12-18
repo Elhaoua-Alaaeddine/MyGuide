@@ -12,23 +12,35 @@ Features
 <h3>
 Authentication
 </h3>
-Create Account: Users can create a new account with a valid email and password.
-
-Log In: Existing users can log in securely to access personalized content.
-
-Forgot Password: Password recovery functionality for users who forget their passwords.
+<ul>
+  <li>Create Account: Users can create a new account with a valid email and password.</li>
+  <li>Log In: Existing users can log in securely to access personalized content.</li>
+  <li>Forgot Password: Password recovery functionality for users who forget their passwords.</li>
+</ul>
 <h3>
 Profile Tab
 </h3>
-View Profile Information: Users can see their profile picture, name, email, country, and role (tourist, business owner, authority figure).
+<ul>
+  <li>View Profile Information: Users can see their profile picture, name, email, country, and role (tourist, business owner, authority figure).</li>
+  <li>Buttons for Interaction:
+  <ul>
+    <li>Report Issues: Allows users to report issues or provide feedback.</li>
+    <li>Update Information: Enables users to update their profile information.</li>
+    <li>Upgrade Account: Users can upgrade their account to authority figure or business owner status.</li>
+    <li>Log Out: Logs the user out of the application.</li>
+    <li>Language Choice: Choose preferred language for the app.</li>
+  </ul>
+  </li>
+</ul>
 
-Buttons for Interaction:
 
-Report Issues: Allows users to report issues or provide feedback.
-Update Information: Enables users to update their profile information.
-Upgrade Account: Users can upgrade their account to authority figure or business owner status.
-Log Out: Logs the user out of the application.
-Language Choice: Choose preferred language for the app.
+
+
+
+
+
+
+
 <h3>
 Home Tab
 </h3>
