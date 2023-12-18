@@ -60,34 +60,18 @@ Getting Started
 </h2>
 Clone the repository:
 
-<pre><code>
-git clone https://github.com/username/MyGuide.git
-</code></pre>
+<pre><code>git clone https://github.com/username/MyGuide.git</code></pre>
 Navigate to the project directory:
 
-<pre><code>
-cd MyGuide
-</code></pre>
+<pre><code>cd MyGuide</code></pre>
 Install dependencies:
-<pre><code>
-npm install
-</code></pre>
+<pre><code>npm install</code></pre>
 
 Run the app:
-<pre>
-  <code>
-npx react-native run-android
-    
-  </code>
-</pre>
+<pre><code>npx react-native run-android</code></pre>
 or
 
-<pre>
-  <code>
-npx react-native run-ios
-    
-  </code>
-</pre>
+<pre><code>npx react-native run-ios   </code></pre>
 <h2>
 Technologies Used
 </h2>
