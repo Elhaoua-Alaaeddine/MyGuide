@@ -60,28 +60,34 @@ Getting Started
 </h2>
 Clone the repository:
 
-bash
-Copy code
+<pre><code>
 git clone https://github.com/username/MyGuide.git
+</code></pre>
 Navigate to the project directory:
 
-bash
-Copy code
+<pre><code>
 cd MyGuide
+</code></pre>
 Install dependencies:
-
-Copy code
+<pre><code>
 npm install
-Run the app:
+</code></pre>
 
-arduino
-Copy code
+Run the app:
+<pre>
+  <code>
 npx react-native run-android
+    
+  </code>
+</pre>
 or
 
-arduino
-Copy code
+<pre>
+  <code>
 npx react-native run-ios
+    
+  </code>
+</pre>
 <h2>
 Technologies Used
 </h2>
