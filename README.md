@@ -63,20 +63,19 @@ Google Maps Integration
 <h2>
 Getting Started
 </h2>
-Clone the repository:
-
+<ol>
+  <li>Clone the repository:</li>
 <pre><code>git clone https://github.com/username/MyGuide.git</code></pre>
-Navigate to the project directory:
-
+  <li>Navigate to the project directory:</li>
 <pre><code>cd MyGuide</code></pre>
-Install dependencies:
+  <li>Install dependencies:</li>
 <pre><code>npm install</code></pre>
-
-Run the app:
+  <li>Run the app:</li>
 <pre><code>npx react-native run-android</code></pre>
 or
-
 <pre><code>npx react-native run-ios   </code></pre>
+</ol>
+
 <h2>
 Technologies Used
 </h2>
