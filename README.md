@@ -32,41 +32,34 @@ Profile Tab
   </ul>
   </li>
 </ul>
-
-
-
-
-
-
-
-
-
 <h3>
 Home Tab
 </h3>
-Top Tabs: Attractions, Hotels, Restaurants, each with a respective search bar.
-
-City Selection: Users can pick a city they want to visit.
-
-Dynamic Content: Based on the selected city, the content of the tabs dynamically updates to display cards with information about attractions, hotels, and restaurants.
-
+<ul>
+  <li>Top Tabs: Attractions, Hotels, Restaurants, each with a respective search bar.</li>
+  <li>City Selection: Users can pick a city they want to visit.</li>
+  <li>Dynamic Content: Based on the selected city, the content of the tabs dynamically updates to display cards with information about attractions, hotels, and restaurants.</li>
+</ul>
 <h3>
 Cards for Attractions, Hotels, Restaurants
 </h3>
 Each card includes:
-
-Image: Picture of the place.
-Title: Name of the place.
-Description: Brief information about the place.
-Average Rating: Displayed as stars.
-Rating System: Allows users to rate the place.
-Buttons:
-Comment: Users can leave comments about the place.
-Report: Report inappropriate content.
+<ul>
+  <li>Image: Picture of the place.</li>
+  <li>Title: Name of the place.</li>
+  <li>Description: Brief information about the place.</li>
+  <li>Average Rating: Displayed as stars.</li>
+  <li>Rating System: Allows users to rate the place.</li>
+  <li>Buttons:<ul><li>Comment: Users can leave comments about the place.</li>
+  <li>Report: Report inappropriate content.</li></ul></li>
+</ul>
 <h3>
 Google Maps Integration
 </h3>
-Location Navigation: Clicking on the image of a place opens Google Maps with the location of the selected place.
+<ul>
+  <li>Location Navigation: Clicking on the image of a place opens Google Maps with the location of the selected place.</li>
+</ul>
+
 <h2>
 Getting Started
 </h2>
@@ -87,8 +80,13 @@ or
 <h2>
 Technologies Used
 </h2>
-React Native
-Firebase (Authentication)
+<ul>
+  <li>React Native</li>
+  <li>Firebase (Authentication)</li>
+  <li>Nativewind (tailwind css for react native)</li>
+</ul>
+
+
 <h2>
 Contributors
 </h2>
