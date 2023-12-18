@@ -89,7 +89,7 @@ Technologies Used
 <h2>
 Contributors
 </h2>
-Your Name
+Elhaoua-Alaaeddine
 <h2>
 License
 </h2>
