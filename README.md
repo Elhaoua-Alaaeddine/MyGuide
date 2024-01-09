@@ -59,7 +59,10 @@ Google Maps Integration
 <ul>
   <li>Location Navigation: Clicking on the image of a place opens Google Maps with the location of the selected place.</li>
 </ul>
-
+<h2>
+Screenshots of the Application
+</h2>
+![Welcome Screen](/assets/images/1.jpg "Welcome Screen"))
 <h2>
 Getting Started
 </h2>
