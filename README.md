@@ -62,7 +62,14 @@ Google Maps Integration
 <h2>
 Screenshots of the Application
 </h2>
-![Welcome Screen](/assets/images/1.jpg "Welcome Screen"))
+<div style="overflow: hidden;justify-content:space-around;">
+  <div style="display: inline-block;">
+    <img/ src="/assets/images/1.jpg" width="270" height="600">
+  </div>
+    <div style="display: inline-block;">
+    <img/ src="/assets/images/2.jpg" width="270" height="600">
+  </div>
+</div>
 <h2>
 Getting Started
 </h2>
